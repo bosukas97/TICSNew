@@ -102,7 +102,7 @@ public class Car extends Thread{
     //
     public void setCounters(Direction side, double x,double y) {
 //        System.out.println(side);
-        System.out.println(ground.count);
+//        System.out.println(ground.count);
 
         if(side.equals(Direction.NORTH)){
         if(x==265){

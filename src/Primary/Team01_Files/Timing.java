@@ -22,7 +22,7 @@ public class Timing {
         }
 
         double Defaulttiming= defaultiming;
-        System.out.println("Total Cars Spaned"+totalCarsSpawned);
+//        System.out.println("Total Cars Spaned"+totalCarsSpawned);
         double CounterN1 = allCounters[0];
         double CounterN23 = allCounters[1];
         double CounterS1 = allCounters[2];
@@ -68,7 +68,7 @@ public class Timing {
 //            System.out.println("Calculated Timing Percentage");
 
         //Getting Total Timing to Let All the Lanes Pass
-            double totalTimingForAllLanes = Defaulttiming;
+            double totalTimingForAllLanes = 60;
 
         //Equally Splitting the Lanes Depending on The Cars Previously Passed
             double TimingN1 = totalTimingForAllLanes * TimingN1_Percentage / 100;

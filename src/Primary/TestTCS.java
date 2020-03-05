@@ -101,7 +101,7 @@ public class TestTCS extends Thread {
     //The timer will consists of the start time and will use
     //a delta time as the main timer. Delta time will be in
     //seconds
-    private long startTime = 0;
+    private long startTime = System.currentTimeMillis()/1000;
     private long deltaTime = 0;
 
     /*   End TEAM01 variables/Methods for TICS */
@@ -109,6 +109,11 @@ public class TestTCS extends Thread {
     private int count = 0;
 
     private Boolean running = true;
+    int counterNorthSouth=1;
+    int counterNorthSouthLeft=0;
+    int counterEastWest=0;
+    int counterEastWestLeft=0;
+
 
     /**
      * TestTCS.begin() is the communication point between the testbed and the
@@ -159,7 +164,15 @@ public class TestTCS extends Thread {
 
         SignalColor is an enum holding possible signal colors.
          */
-        SignalColor north_south_color, east_west_color,north_south_left_color,east_west_left_color ;
+        SignalColor north_south_color = SignalColor.RED;
+        SignalColor east_west_color = SignalColor.RED;
+        SignalColor north_south_left_color=SignalColor.RED;
+        SignalColor east_west_left_color=SignalColor.RED;
+
+        SignalColor north_south_colorPED = SignalColor.RED;
+        SignalColor east_west_colorPED = SignalColor.RED;
+
+
 
         /*
         This is a useful way of grouping lights by direction.
@@ -193,15 +206,16 @@ public class TestTCS extends Thread {
         }
 
 
-        while(running){
-            double timingTestNORTHLEFT = Timing.getTiming(20,"NORTH","LEFT");
-            double timingTestNORTHOTHER = Timing.getTiming(20,"NORTH","OTHER");
-            double timingTestSOUTHLEFT = Timing.getTiming(20,"SOUTH","LEFT");
-            double timingTestSOUTHOTHER = Timing.getTiming(20,"SOUTH","OTHER");
-            double timingTestEASTLEFT = Timing.getTiming(20,"EAST","LEFT");
-            double timingTestEASTOTHER = Timing.getTiming(20,"EAST","OTHER");
-            double timingTestWESTLEFT = Timing.getTiming(20,"WEST","LEFT");
-            double timingTestWESTOTHER = Timing.getTiming(20,"WEST","OTHER");
+        while(running) {
+            double timingTestNORTHLEFT = Timing.getTiming(10, "NORTH", "LEFT");
+            double timingTestNORTHOTHER = Timing.getTiming(10, "NORTH", "OTHER");
+            double timingTestSOUTHLEFT = Timing.getTiming(10, "SOUTH", "LEFT");
+            double timingTestSOUTHOTHER = Timing.getTiming(10, "SOUTH", "OTHER");
+            double timingTestEASTLEFT = Timing.getTiming(10, "EAST", "LEFT");
+            double timingTestEASTOTHER = Timing.getTiming(10, "EAST", "OTHER");
+            double timingTestWESTLEFT = Timing.getTiming(10, "WEST", "LEFT");
+            double timingTestWESTOTHER = Timing.getTiming(10, "WEST", "OTHER");
+
 
             System.out.println("North Left Timing Now in seconds"+ timingTestNORTHLEFT );
             System.out.println("North Other Two Lanes Timing Now in seconds"+ timingTestNORTHOTHER );
@@ -212,7 +226,10 @@ public class TestTCS extends Thread {
             System.out.println("West Left Timing Now in seconds"+ timingTestWESTLEFT );
             System.out.println("West Other Two Lanes Timing Now in seconds"+ timingTestWESTOTHER );
 
-//
+            deltaTime = (System.currentTimeMillis() / 1000) - startTime;
+
+
+            System.out.println(deltaTime);
 //            /*
 //            This is a simple way of alternating the states of signal colors on a timed basis.
 //             */
@@ -251,53 +268,77 @@ public class TestTCS extends Thread {
 
             //Assign Times for each line keep the states of left turnes seperate
             //Total of
+            double timingLanesYellow = 6;
+            double timingNorthSouth = (timingTestNORTHOTHER + timingTestSOUTHOTHER) / 2;
+            double timingNorthSouthLeft = (timingTestNORTHLEFT + timingTestSOUTHLEFT) / 2  ;
+            double timingEastWest = (timingTestEASTOTHER + timingTestWESTOTHER) / 2  ;
+            double timingEastWestLeft = (timingTestEASTLEFT + timingTestWESTLEFT) / 2  ;
 
-            if (count %  8 ==  0){
+            if (deltaTime <= timingNorthSouth) {
                 north_south_color = SignalColor.GREEN;
                 east_west_color = SignalColor.RED;
                 north_south_left_color = SignalColor.RED;
                 east_west_left_color = SignalColor.RED;
-            } else if (count % 8 == 1){
+                north_south_colorPED = SignalColor.RED;
+                east_west_colorPED = SignalColor.GREEN;
+
+
+            } else if (deltaTime <= (timingNorthSouth + timingLanesYellow)) {
                 north_south_color = SignalColor.YELLOW;
                 east_west_color = SignalColor.RED;
                 north_south_left_color = SignalColor.RED;
                 east_west_left_color = SignalColor.RED;
-            } else if (count % 8 == 2){
+                north_south_colorPED = SignalColor.RED;
+                east_west_colorPED = SignalColor.RED;
+
+            } else if (deltaTime <= timingNorthSouthLeft+timingNorthSouth + timingLanesYellow) {
                 north_south_color = SignalColor.RED;
                 east_west_color = SignalColor.RED;
                 north_south_left_color = SignalColor.GREEN;
                 east_west_left_color = SignalColor.RED;
-            }
-            else if (count % 8 == 3){
+                north_south_colorPED = SignalColor.RED;
+                east_west_colorPED = SignalColor.RED;
+            } else if (deltaTime <= (timingNorthSouthLeft+timingNorthSouth + timingLanesYellow + timingLanesYellow)) {
                 north_south_color = SignalColor.RED;
                 east_west_color = SignalColor.RED;
                 north_south_left_color = SignalColor.YELLOW;
                 east_west_left_color = SignalColor.RED;
-            }
-            else if (count % 8 == 4){
+                north_south_colorPED = SignalColor.RED;
+                east_west_colorPED = SignalColor.RED;
+            } else if (deltaTime <= timingEastWest + timingNorthSouthLeft+timingNorthSouth + timingLanesYellow + timingLanesYellow) {
                 north_south_color = SignalColor.RED;
                 east_west_color = SignalColor.GREEN;
                 north_south_left_color = SignalColor.RED;
                 east_west_left_color = SignalColor.RED;
-            }
-            else if (count % 8 == 5){
+                north_south_colorPED = SignalColor.GREEN;
+                east_west_colorPED = SignalColor.RED;
+            } else if (deltaTime <= ( timingEastWest + timingNorthSouthLeft+timingNorthSouth + timingLanesYellow + timingLanesYellow + timingLanesYellow)) {
                 north_south_color = SignalColor.RED;
                 east_west_color = SignalColor.YELLOW;
                 north_south_left_color = SignalColor.RED;
                 east_west_left_color = SignalColor.RED;
-            }
-            else if (count % 8 == 6){
+                north_south_colorPED = SignalColor.RED;
+                east_west_colorPED = SignalColor.RED;
+            } else if (deltaTime <= timingEastWestLeft + timingEastWest + timingNorthSouthLeft+timingNorthSouth + timingLanesYellow + timingLanesYellow + timingLanesYellow) {
                 north_south_color = SignalColor.RED;
                 east_west_color = SignalColor.RED;
                 north_south_left_color = SignalColor.RED;
                 east_west_left_color = SignalColor.GREEN;
-            }
-            else {
+                north_south_colorPED = SignalColor.RED;
+                east_west_colorPED = SignalColor.RED;
+            } else if (deltaTime <= (timingEastWestLeft + timingEastWest + timingNorthSouthLeft+timingNorthSouth + timingLanesYellow + timingLanesYellow + timingLanesYellow + timingLanesYellow)) {
                 north_south_color = SignalColor.RED;
                 east_west_color = SignalColor.RED;
                 north_south_left_color = SignalColor.RED;
                 east_west_left_color = SignalColor.YELLOW;
+                north_south_colorPED = SignalColor.RED;
+                east_west_colorPED = SignalColor.RED;
             }
+
+            if (east_west_left_color==SignalColor.YELLOW) {
+                startTime = System.currentTimeMillis() / 1000;
+            }
+
 
             /*
             This changes our grouping of lanes to the colors specified above.
@@ -305,10 +346,11 @@ public class TestTCS extends Thread {
             for(Lanes l: north_south) {
                 if (l.toString().contains("2") || l.toString().contains("3")) {
                     l.setColor(north_south_color);
-                    Lights.WEST.setColor(SignalColor.GREEN);
-                    Lights.EAST.setColor(SignalColor.GREEN);
-                    Lights.NORTH.setColor(SignalColor.RED);
-                    Lights.SOUTH.setColor(SignalColor.RED);
+                    Lights.WEST.setColor(east_west_colorPED);
+                    Lights.EAST.setColor(east_west_colorPED);
+                    Lights.NORTH.setColor(north_south_colorPED);
+                    Lights.SOUTH.setColor(north_south_colorPED);
+
                 }
 
             }
@@ -316,30 +358,30 @@ public class TestTCS extends Thread {
             {
                 if (l.toString().contains("2") || l.toString().contains("3")) {
                     l.setColor(east_west_color);
-                    Lights.NORTH.setColor(SignalColor.GREEN);
-                    Lights.SOUTH.setColor(SignalColor.GREEN);
-                    Lights.WEST.setColor(SignalColor.RED);
-                    Lights.EAST.setColor(SignalColor.RED);
+                    Lights.NORTH.setColor(north_south_colorPED);
+                    Lights.SOUTH.setColor(north_south_colorPED);
+                    Lights.WEST.setColor(east_west_colorPED);
+                    Lights.EAST.setColor(east_west_colorPED);
                 }
 
             }
             for(Lanes l: north_south_left) {
                 if (l.toString().contains("1")) {
                     l.setColor(north_south_left_color);
-                    Lights.NORTH.setColor(SignalColor.RED);
-                    Lights.SOUTH.setColor(SignalColor.RED);
-                    Lights.WEST.setColor(SignalColor.RED);
-                    Lights.EAST.setColor(SignalColor.RED);
+                    Lights.NORTH.setColor(north_south_colorPED);
+                    Lights.SOUTH.setColor(north_south_colorPED);
+                    Lights.WEST.setColor(east_west_colorPED);
+                    Lights.EAST.setColor(east_west_colorPED);
                 }
             }
             for(Lanes l: east_west_left)
             {
                 if (l.toString().contains("1")) {
                     l.setColor(east_west_left_color);
-                    Lights.NORTH.setColor(SignalColor.RED);
-                    Lights.SOUTH.setColor(SignalColor.RED);
-                    Lights.WEST.setColor(SignalColor.RED);
-                    Lights.EAST.setColor(SignalColor.RED);
+                    Lights.NORTH.setColor(north_south_colorPED);
+                    Lights.SOUTH.setColor(north_south_colorPED);
+                    Lights.WEST.setColor(east_west_colorPED);
+                    Lights.EAST.setColor(east_west_colorPED);
                 }
             }
 
@@ -354,34 +396,34 @@ public class TestTCS extends Thread {
                 e.printStackTrace();
             }
 
-            deltaTime = (System.currentTimeMillis() - startTime) / 1000;
+
         }
-
-        Road roadNS = new Road(this, Road.RoadType.NS);
-        Road roadWE = new Road(this, Road.RoadType.WE);
-        roadNS.setActive(true);
-        roadWE.setActive(false);
-        startTime = System.currentTimeMillis();
-        while(running){
-
-            roadNS.update(deltaTime);
-            roadWE.update(deltaTime);
-
-            switch (curState){
-                case dayMode:
-                    break;
-                case nightMode:
-                    break;
-                case emergencyMode:
-                    break;
-                case transitionMode:
-                    break;
-                case fourWayStopMode:
-                    break;
-            }
-
-            deltaTime = (System.currentTimeMillis() - startTime) / 1000;
-        }
+//
+//        Road roadNS = new Road(this, Road.RoadType.NS);
+//        Road roadWE = new Road(this, Road.RoadType.WE);
+//        roadNS.setActive(true);
+//        roadWE.setActive(false);
+//        startTime = System.currentTimeMillis();
+//        while(running){
+//
+//            roadNS.update(deltaTime);
+//            roadWE.update(deltaTime);
+//
+//            switch (curState){
+//                case dayMode:
+//                    break;
+//                case nightMode:
+//                    break;
+//                case emergencyMode:
+//                    break;
+//                case transitionMode:
+//                    break;
+//                case fourWayStopMode:
+//                    break;
+//            }
+//
+//            deltaTime = (System.currentTimeMillis() - startTime) / 1000;
+//        }
         System.out.println("Test ended..");
     }
 
