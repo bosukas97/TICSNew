@@ -6,12 +6,17 @@
     <bookmark url="file://$PROJECT_DIR$/src/Primary/Team01_Files/Road.java" line="110" />
     <bookmark url="file://$PROJECT_DIR$/src/Primary/Team01_Files/Road.java" line="140" />
     <bookmark url="file://$PROJECT_DIR$/src/Primary/Team01_Files/Timing.java" line="117" />
+    <bookmark url="file://$PROJECT_DIR$/src/Primary/Team01_Files/Road.java" line="20" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="94f00f69-7fc3-4a92-ac94-3d6323bcc21c" name="Default Changelist" comment="u">
+    <list default="true" id="94f00f69-7fc3-4a92-ac94-3d6323bcc21c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Primary/Team01_Files/Lane.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Graphics/Traffic/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Graphics/Traffic/Car.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Primary/Team01_Files/Timing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Primary/Team01_Files/Timing.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CJPROJECT11/Graphics/Traffic/Car.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CJPROJECT11/Graphics/Traffic/Car.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CJPROJECT11/Primary/Team01_Files/Timing.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CJPROJECT11/Primary/Team01_Files/Timing.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CJPROJECT11/Primary/TestTCS$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CJPROJECT11/Primary/TestTCS$States.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CJPROJECT11/Primary/TestTCS$States.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CJPROJECT11/Primary/TestTCS.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CJPROJECT11/Primary/TestTCS.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Primary/TestTCS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Primary/TestTCS.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -25,67 +30,65 @@
     <session id="-458319114">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="5" />
           <entry key="project.open.time.1" value="1" />
-          <entry key="project.open.time.6" value="1" />
-          <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.open.time.6" value="2" />
+          <entry key="project.open.time.7" value="1" />
+          <entry key="project.open.time.9" value="2" />
+          <entry key="project.opened" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="36" />
+          <entry key="java" value="43" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="36" />
+          <entry key="JAVA" value="43" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="4096" />
+          <entry key="java" value="5051" />
           <entry key="txt" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="4096" />
+          <entry key="JAVA" value="5051" />
           <entry key="PLAIN_TEXT" value="1" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.38561034">
+    <splitter split-orientation="horizontal" split-proportion="0.49112427">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/Primary/Main.java">
+            <entry file="file://$PROJECT_DIR$/src/Primary/Team01_Files/Timing.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="901">
-                  <caret line="64" selection-start-line="64" selection-end-line="64" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
+                <state relative-caret-position="170">
+                  <caret line="14" column="28" selection-start-line="14" selection-end-line="15" />
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/Primary/Controller.java">
+            <entry file="file://$PROJECT_DIR$/src/Primary/Team01_Files/Road.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1836">
-                  <caret line="127" column="57" selection-start-line="127" selection-start-column="57" selection-end-line="127" selection-end-column="57" />
+                <state relative-caret-position="612">
+                  <caret line="149" column="13" lean-forward="true" selection-start-line="149" selection-start-column="13" selection-end-line="149" selection-end-column="13" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/Graphics/Simulation.java">
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/Primary/Team01_Files/Lane.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="646">
-                  <caret line="118" selection-start-line="118" selection-end-line="118" />
+                <state relative-caret-position="425">
+                  <caret line="25" column="30" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="30" />
                 </state>
               </provider>
             </entry>
@@ -93,26 +96,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/Primary/Lanes.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="510">
-                  <caret line="34" column="23" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="23" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/Primary/Team01_Files/Timing.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="357">
-                  <caret line="25" column="42" lean-forward="true" selection-start-line="25" selection-start-column="42" selection-end-line="25" selection-end-column="42" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="jar://C:/Program Files/Java/jdk-10.0.2/lib/src.zip!/java.base/java/lang/ref/Reference.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="2278">
-                  <caret line="163" column="31" selection-start-line="163" selection-start-column="31" selection-end-line="163" selection-end-column="31" />
+                <state relative-caret-position="425">
+                  <caret line="30" column="37" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="37" />
                 </state>
               </provider>
             </entry>
@@ -124,57 +109,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/Primary/TestTCS.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1608">
-                  <caret line="218" selection-start-line="218" selection-end-line="227" />
-                  <folding>
-                    <element signature="e#14448#14449#0" expanded="true" />
-                    <element signature="e#14479#14480#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/Primary/Lanes.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="510">
-                  <caret line="34" column="23" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="23" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/Primary/Team01_Files/Road.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="683">
-                  <caret line="100" column="26" selection-start-line="100" selection-start-column="26" selection-end-line="100" selection-end-column="26" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/Graphics/Traffic/Car.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="544">
-                  <caret line="105" lean-forward="true" selection-start-line="105" selection-end-line="105" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/Graphics/Grounds/Ground.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="187">
-                  <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/Graphics/Grounds/Intersection.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1224">
-                  <caret line="77" column="22" selection-start-line="77" selection-start-column="22" selection-end-line="77" selection-end-column="22" />
+                <state relative-caret-position="378">
+                  <caret line="215" column="46" selection-start-line="215" selection-start-column="46" selection-end-line="215" selection-end-column="46" />
                 </state>
               </provider>
             </entry>
@@ -213,8 +149,11 @@
         <option value="$PROJECT_DIR$/src/Graphics/CustomCar.java" />
         <option value="$PROJECT_DIR$/src/Primary/Team01_Files/Road.java" />
         <option value="$PROJECT_DIR$/src/Graphics/Traffic/Car.java" />
-        <option value="$PROJECT_DIR$/src/Primary/TestTCS.java" />
         <option value="$PROJECT_DIR$/src/Primary/Team01_Files/Timing.java" />
+        <option value="$PROJECT_DIR$/src/Primary/Lanes.java" />
+        <option value="$PROJECT_DIR$/src/Primary/Team01_Files/Lanes.java" />
+        <option value="$PROJECT_DIR$/src/Primary/Team01_Files/Lane.java" />
+        <option value="$PROJECT_DIR$/src/Primary/TestTCS.java" />
       </list>
     </option>
   </component>
@@ -224,9 +163,9 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-193" />
-    <option name="y" value="-15" />
+  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
+    <option name="x" value="-15" />
+    <option name="y" value="-14" />
     <option name="width" value="1603" />
     <option name="height" value="933" />
   </component>
@@ -236,6 +175,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -265,15 +207,12 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1583435287117" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1583791499056" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../CSPROJECT1" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -334,7 +273,10 @@
       <updated>1583342896705</updated>
       <workItem from="1583342899331" duration="15777000" />
       <workItem from="1583394791452" duration="602000" />
-      <workItem from="1583427649292" duration="4172000" />
+      <workItem from="1583427649292" duration="4912000" />
+      <workItem from="1583476059598" duration="20000" />
+      <workItem from="1583476147945" duration="418000" />
+      <workItem from="1583787491516" duration="3825000" />
     </task>
     <task id="LOCAL-00001" summary="u">
       <created>1583362533832</created>
@@ -343,17 +285,24 @@
       <option name="project" value="LOCAL" />
       <updated>1583362533832</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="u">
+      <created>1583435413594</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1583435413594</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20551000" />
+    <option name="totallyTimeSpent" value="25554000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="0" y="0" width="1920" height="1080" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.09594883" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.09914712" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -361,16 +310,16 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49840087" visible="true" weight="0.17028199" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49946696" weight="0.22023809" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4968017" visible="true" weight="0.38194445" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.1626898" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.329718" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.4978678" weight="0.3286334" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50159913" side_tool="true" visible="true" weight="0.17028199" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49573562" weight="0.3286334" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50319827" side_tool="true" visible="true" weight="0.38194445" />
       <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.49733475" weight="0.14316703" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -439,10 +388,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1751">
           <caret line="121" column="25" selection-start-line="121" selection-start-column="17" selection-end-line="121" selection-end-column="25" />
-          <folding>
-            <element signature="e#1541#1542#0" expanded="true" />
-            <element signature="e#1610#1611#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -499,6 +444,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Graphics/Simulation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1836">
+          <caret line="118" selection-start-line="118" selection-end-line="118" />
+        </state>
+      </provider>
+    </entry>
     <entry file="jar://C:/Program Files/Java/jdk-10.0.2/lib/src.zip!/java.base/java/lang/ref/Reference.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2278">
@@ -506,10 +458,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Primary/Lanes.java">
+    <entry file="file://$PROJECT_DIR$/src/Graphics/Traffic/Car.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="34" column="23" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="23" />
+        <state relative-caret-position="1615">
+          <caret line="105" selection-start-line="105" selection-end-line="105" />
         </state>
       </provider>
     </entry>
@@ -520,49 +472,52 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Primary/Team01_Files/Timing.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="14" column="28" selection-start-line="14" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Graphics/Grounds/Intersection.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1224">
+        <state relative-caret-position="541">
           <caret line="77" column="22" selection-start-line="77" selection-start-column="22" selection-end-line="77" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Graphics/Simulation.java">
+    <entry file="file://$PROJECT_DIR$/src/Primary/Team01_Files/Lanes.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="118" selection-start-line="118" selection-end-line="118" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Graphics/Traffic/Car.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="105" lean-forward="true" selection-start-line="105" selection-end-line="105" />
+        <state relative-caret-position="238">
+          <caret line="14" column="18" selection-end-line="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Primary/Team01_Files/Road.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="683">
-          <caret line="100" column="26" selection-start-line="100" selection-start-column="26" selection-end-line="100" selection-end-column="26" />
+        <state relative-caret-position="612">
+          <caret line="149" column="13" lean-forward="true" selection-start-line="149" selection-start-column="13" selection-end-line="149" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Primary/Lanes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="30" column="37" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Primary/Team01_Files/Lane.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="30" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Primary/TestTCS.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1608">
-          <caret line="218" selection-start-line="218" selection-end-line="227" />
-          <folding>
-            <element signature="e#14448#14449#0" expanded="true" />
-            <element signature="e#14479#14480#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Primary/Team01_Files/Timing.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="25" column="42" lean-forward="true" selection-start-line="25" selection-start-column="42" selection-end-line="25" selection-end-column="42" />
+        <state relative-caret-position="378">
+          <caret line="215" column="46" selection-start-line="215" selection-start-column="46" selection-end-line="215" selection-end-column="46" />
         </state>
       </provider>
     </entry>

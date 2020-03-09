@@ -1,6 +1,7 @@
 package Primary;
 
 import Graphics.Traffic.Car;
+import Primary.Team01_Files.Lane;
 import Primary.Team01_Files.Road;
 import Primary.Team01_Files.Timing;
 
@@ -134,36 +135,7 @@ public class TestTCS extends Thread {
     public void testBegin() {
 
 
-        /*
-        RED (Color.RED),
-        YELLOW (Color.YELLOW),
-        GREEN (Color.GREEN),
-        BLACK (Color.BLACK);
 
-        SignalColor is an enum holding possible signal colors.
-         */
-//        SignalColor north_south_color, east_west_color;
-//
-//        /*
-//        This is a useful way of grouping lights by direction.
-//        Here we are grouping parallel directions north with south, and east with west.
-//         */
-//        LinkedList<Lanes> north_south = new LinkedList<>();
-//        LinkedList<Lanes> east_west = new LinkedList<>();
-//        for(Lanes l: Lanes.values())
-//        {
-//            if(l.toString().contains("N") || l.toString().contains("S")) north_south.add(l);
-//            else east_west.add(l);
-//        }
-//-----------------------
-                /*
-        RED (Color.RED),
-        YELLOW (Color.YELLOW),
-        GREEN (Color.GREEN),
-        BLACK (Color.BLACK);
-
-        SignalColor is an enum holding possible signal colors.
-         */
         SignalColor north_south_color = SignalColor.RED;
         SignalColor east_west_color = SignalColor.RED;
         SignalColor north_south_left_color=SignalColor.RED;
@@ -206,7 +178,38 @@ public class TestTCS extends Thread {
         }
 
 
+
         while(running) {
+            //Fins who's waiting on the lane-
+
+            boolean carWaitingN1 =  Lane.checkLane("N1");
+            boolean carWaitingN2 =  Lane.checkLane("N2");
+            boolean carWaitingN3 =  Lane.checkLane("N3");
+            boolean carWaitingE1 =  Lane.checkLane("E1");
+            boolean carWaitingE2 =  Lane.checkLane("E2");
+            boolean carWaitingE3 =  Lane.checkLane("E3");
+            boolean carWaitingW1 =  Lane.checkLane("W1");
+            boolean carWaitingW2 =  Lane.checkLane("W2");
+            boolean carWaitingW3 =  Lane.checkLane("W3");
+            boolean carWaitingS1 =  Lane.checkLane("S1");
+            boolean carWaitingS2 =  Lane.checkLane("S2");
+            boolean carWaitingS3 =  Lane.checkLane("S3");
+
+
+            boolean getEmergencyN1 = Lane.checkEmergencyonLane("N1");
+            boolean getEmergencyN2 =  Lane.checkEmergencyonLane("N2");
+            boolean getEmergencyN3 =  Lane.checkEmergencyonLane("N3");
+            boolean getEmergencyE1 =  Lane.checkEmergencyonLane("E1");
+            boolean getEmergencyE2 =  Lane.checkEmergencyonLane("E2");
+            boolean getEmergencyE3 =  Lane.checkEmergencyonLane("E3");
+            boolean getEmergencyW1 =  Lane.checkEmergencyonLane("W1");
+            boolean getEmergencyW2 =  Lane.checkEmergencyonLane("W2");
+            boolean getEmergencyW3 =  Lane.checkEmergencyonLane("W3");
+            boolean getEmergencyS1 =  Lane.checkEmergencyonLane("S1");
+            boolean getEmergencyS2 =  Lane.checkEmergencyonLane("S2");
+            boolean getEmergencyS3 =  Lane.checkEmergencyonLane("S3");
+
+
             double timingTestNORTHLEFT = Timing.getTiming(10, "NORTH", "LEFT");
             double timingTestNORTHOTHER = Timing.getTiming(10, "NORTH", "OTHER");
             double timingTestSOUTHLEFT = Timing.getTiming(10, "SOUTH", "LEFT");
@@ -217,55 +220,18 @@ public class TestTCS extends Thread {
             double timingTestWESTOTHER = Timing.getTiming(10, "WEST", "OTHER");
 
 
-            System.out.println("North Left Timing Now in seconds"+ timingTestNORTHLEFT );
-            System.out.println("North Other Two Lanes Timing Now in seconds"+ timingTestNORTHOTHER );
-            System.out.println("South Left Timing Now in seconds"+ timingTestSOUTHLEFT );
-            System.out.println("South Other Two Lanes Timing Now in seconds"+ timingTestSOUTHOTHER );
-            System.out.println("East Left Timing Now in seconds"+ timingTestEASTLEFT );
-            System.out.println("East Other Two Lanes Timing Now in seconds"+ timingTestEASTOTHER );
-            System.out.println("West Left Timing Now in seconds"+ timingTestWESTLEFT );
-            System.out.println("West Other Two Lanes Timing Now in seconds"+ timingTestWESTOTHER );
+//            System.out.println("North Left Timing Now in seconds"+ timingTestNORTHLEFT );
+//            System.out.println("North Other Two Lanes Timing Now in seconds"+ timingTestNORTHOTHER );
+//            System.out.println("South Left Timing Now in seconds"+ timingTestSOUTHLEFT );
+//            System.out.println("South Other Two Lanes Timing Now in seconds"+ timingTestSOUTHOTHER );
+//            System.out.println("East Left Timing Now in seconds"+ timingTestEASTLEFT );
+//            System.out.println("East Other Two Lanes Timing Now in seconds"+ timingTestEASTOTHER );
+//            System.out.println("West Left Timing Now in seconds"+ timingTestWESTLEFT );
+//            System.out.println("West Other Two Lanes Timing Now in seconds"+ timingTestWESTOTHER );
 
             deltaTime = (System.currentTimeMillis() / 1000) - startTime;
 
-
             System.out.println(deltaTime);
-//            /*
-//            This is a simple way of alternating the states of signal colors on a timed basis.
-//             */
-//
-//            if (count %  4 ==  0){
-//                north_south_color = SignalColor.GREEN;
-//                east_west_color = SignalColor.RED;
-//            } else if (count % 4 == 1){
-//                north_south_color = SignalColor.YELLOW;
-//                east_west_color = SignalColor.RED;
-//            } else if (count % 4 == 2){
-//                north_south_color = SignalColor.RED;
-//                east_west_color = SignalColor.GREEN;
-//            } else {
-//                north_south_color = SignalColor.RED;
-//                east_west_color = SignalColor.YELLOW;
-//            }
-//
-//            /*
-//            This changes our grouping of lanes to the colors specified above.
-//             */
-//            for(Lanes l: north_south)
-//            {
-//                l.setColor(north_south_color);
-//            }
-//            for(Lanes l: east_west)
-//            {
-//                l.setColor(east_west_color);
-//            }
-//            Lights.WEST.setColor(SignalColor.GREEN);
-//            count ++;
-
-                        /*
-            This is a simple way of alternating the states of signal colors on a timed basis.
-             */
-
             //Assign Times for each line keep the states of left turnes seperate
             //Total of
             double timingLanesYellow = 6;
@@ -273,6 +239,8 @@ public class TestTCS extends Thread {
             double timingNorthSouthLeft = (timingTestNORTHLEFT + timingTestSOUTHLEFT) / 2  ;
             double timingEastWest = (timingTestEASTOTHER + timingTestWESTOTHER) / 2  ;
             double timingEastWestLeft = (timingTestEASTLEFT + timingTestWESTLEFT) / 2  ;
+
+
 
             if (deltaTime <= timingNorthSouth) {
                 north_south_color = SignalColor.GREEN;
